@@ -8,8 +8,8 @@ from PIL import Image
 SRC_DIR = 'images'
 DEST_DIR = 'results'
 #IMG_NAMES = ("desk.png","night_sample.jpg")
-#IMG_NAMES = ("desk.png",)
-IMG_NAMES = ("night_sample.jpg",)
+IMG_NAMES = ("15.png",)
+#IMG_NAMES = ("night_sample.jpg",)
 
 def get_filenames():
     """Return list of tuples for source and template destination
