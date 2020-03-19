@@ -3,13 +3,14 @@
 
 import os
 import numpy as np
-from PIL import Image
 
 SRC_DIR = 'images'
 DEST_DIR = 'results'
 #IMG_NAMES = ("desk.png","night_sample.jpg")
-IMG_NAMES = ("15.png",)
-#IMG_NAMES = ("night_sample.jpg",)
+IMG_NAMES = ("from_MSR.png",)
+#IMG_NAMES = ("cat.jpg",)
+#IMG_NAMES = ("5101556393_resized.jpg",)
+
 
 def get_filenames():
     """Return list of tuples for source and template destination
@@ -19,9 +20,15 @@ def get_filenames():
     src_path = os.path.join(parent_dir, SRC_DIR)
     dest_path = os.path.join(parent_dir, DEST_DIR)
     filenames = []
+    global folder
+    
     for name in IMG_NAMES:
         base, ext = os.path.splitext(name)
         tempname = base + '-%s' + ext
-        filenames.append((os.path.join(src_path, name),
-                          os.path.join(dest_path, tempname)))
+        filenames.append((os.path.join(src_path, name), os.path.join(dest_path, tempname)))
+                          
+        folder = filenames[0][0][:-4] + "/"
+        if not os.path.exists(folder):
+            os.makedirs(folder)
+                    
     return filenames
