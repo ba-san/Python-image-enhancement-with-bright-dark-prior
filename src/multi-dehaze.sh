@@ -2,7 +2,7 @@
 
 workon WRN
 
-files="/home/daisuke/Workplace/Python-image-enhancement-with-bright-dark-prior/crowd_night_trial/*"
+files="/home/daisuke/Workplace/Python-image-enhancement-with-bright-dark-prior/images/*"
 
 for filepath in $files; do
   faname_ext="${filepath##*/}"

@@ -156,9 +156,8 @@ def dehaze(I, tmin, w, alpha, omega, p, eps):
     J_refined_dark = get_final_image(I, A, refined_dark_t, tmin)
     cv2.imwrite(folder + '/J_refined_dark.png', J_refined_dark*255)
 
-
 if __name__ == '__main__':
-    src = "2.png"
+    src = "8.png"
     tmin=0.1   # minimum value for t to make J image
     w=15       # window size, which determine the corseness of prior images
     alpha=0.4  # threshold for transmission correction. range is 0.0 to 1.0. The bigger number makes darker image.
@@ -166,10 +165,8 @@ if __name__ == '__main__':
     p=0.1      # percentage to consider for atmosphere. 0.0 to 1.0
     eps=1e-3   # for J image
     
-    im = cv2.imread("../images/" + src)
-    #im = cv2.imread("../crowd_night_trial/" + src)
+    im = cv2.imread("../images/" + src) # set the directory images are located.
     folder = "../images/" + src[:-4]
-    #folder = "../crowd_night_trial/" + src[:-4]
 
     if not os.path.exists(folder):
         os.makedirs(folder)
