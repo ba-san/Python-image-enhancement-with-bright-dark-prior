@@ -14,8 +14,8 @@ Only support Python2 for now.
 ## Limitations
 |Input|Output|
 |---|---|
-|<img src="https://user-images.githubusercontent.com/44015510/78753117-43fbc580-79b0-11ea-9fa0-61ceae313258.jpg" width="300">|<img src="https://user-images.githubusercontent.com/44015510/78753153-4fe78780-79b0-11ea-9c0f-02b2a13aa87b.png" width="300">|   
-|<img src="https://user-images.githubusercontent.com/44015510/78753175-5b3ab300-79b0-11ea-8d31-3f5d49fb3704.png" width="300">|<img src="https://user-images.githubusercontent.com/44015510/78753247-74dbfa80-79b0-11ea-889b-46b814270959.png" width="300">|
+|<img src="https://user-images.githubusercontent.com/44015510/78845943-07c67480-7a45-11ea-8e13-1a8a34911b1e.jpeg" width="300">|<img src="https://user-images.githubusercontent.com/44015510/78845957-16ad2700-7a45-11ea-8704-01e1e38e2230.png" width="300">|   
+|<img src="https://user-images.githubusercontent.com/44015510/78845968-1b71db00-7a45-11ea-937a-29396dd74d94.jpeg" width="300">|<img src="https://user-images.githubusercontent.com/44015510/78845971-1f056200-7a45-11ea-973c-e65afd9e261d.png" width="300">|
 
 ## Reference
 https://github.com/joyeecheung/dark-channel-prior-dehazing
