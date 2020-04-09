@@ -157,7 +157,7 @@ def dehaze(I, tmin, w, alpha, omega, p, eps):
     cv2.imwrite(folder + '/J_refined_dark.png', J_refined_dark*255)
 
 if __name__ == '__main__':
-    src = "8.png"
+    src = "limitation2.jpeg"
     tmin=0.1   # minimum value for t to make J image
     w=15       # window size, which determine the corseness of prior images
     alpha=0.4  # threshold for transmission correction. range is 0.0 to 1.0. The bigger number makes darker image.
