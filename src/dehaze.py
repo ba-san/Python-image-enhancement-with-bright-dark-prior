@@ -12,7 +12,7 @@ L = 256  # color depth
 
 def get_illumination_channel(I, w):
     M, N, _ = I.shape
-    padded = np.pad(I, ((w/2, w/2), (w/2, w/2), (0, 0)), 'edge') # Run 'python2' for this line.
+    padded = np.pad(I, ((int(w/2), int(w/2)), (int(w/2), int(w/2)), (0, 0)), 'edge')
 
     darkch = np.zeros((M, N))
     brightch = np.zeros((M, N))
